@@ -9,7 +9,7 @@ const ProductComponent = ({ product }: { product: Product }) => {
         <span className="text-xs">$</span><span className="text-sm">{product.price}</span>
       </div>
       <div className="p-5">
-        <Image src={product.image} alt={product.title} height={100} width={100} />
+        <Image src={product.image} alt={product.title} height={100} width={100} placeholder="blur" blurDataURL="https://placehold.co/600x400/000000/db"/>
       </div>
       <div className="text-xs text-center px-2">{product.title}</div>
     </div>
